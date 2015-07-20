@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Hello Amaze UI</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <style>
+        .am-g {
+            border: 1px solid red;
+        }
+
+        [class*='am-u'] + [class*='am-u'] {
+            border-left: 1px solid red;
+        }
+
+        /*.am-container {*/
+            /*-webkit-box-sizing: border-box;*/
+            /*-moz-box-sizing: border-box;*/
+            /*box-sizing: border-box;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            /*padding-left: 1rem;*/
+            /*padding-right: 1rem;*/
+            /*width: 100%;*/
+            /*max-width: 1000px;*/
+        /*}*/
+
+        /*@media only screen and (min-width: 641px) {*/
+            /*.am-container {*/
+                /*padding-left: 1.5rem;*/
+                /*padding-right: 1.5rem;*/
+            /*}*/
+        /*}*/
+    </style>
+</head>
+<body>
+<p>
+    Hello Amaze UI.
+</p>
+
+<!--在这里编写你的代码-->
+<p><strong>
+    示例 1：一个基本的网格
+</strong></p>
+
+<div class="am-g">
+    <div class="am-u-sm-4">4</div>
+    <div class="am-u-sm-8">8</div>
+</div>
+
+<p><strong>
+    示例 2：不同区间不同的划分比例
+</strong></p>
+
+<div class="am-g doc-am-g">
+    <div class="am-u-sm-6 am-u-md-4 am-u-lg-3">sm-6 md-4 lg-3</div>
+    <div class="am-u-sm-6 am-u-md-8 am-u-lg-9">sm-6 md-8 lg-9</div>
+</div>
+<p><strong>
+    示例 3：限制宽度的网格
+</strong></p>
+
+<p>没有限制宽度的网格</p>
+
+<div class="am-g">
+    <div class="am-u-sm-4">4</div>
+    <div class="am-u-sm-8">8</div>
+</div>
+
+<p>限制宽度的网格</p>
+
+<div class="am-g am-g-fixed">
+    <div class="am-u-sm-4">4</div>
+    <div class="am-u-sm-8">8</div>
+</div>
+
+<p>全宽的行</p>
+
+<div class="am-g am-g-fixed">
+    <div class="am-u-sm-12">全宽限制最大宽度的行</div>
+</div>
+
+<p><strong>
+    示例 4：容器
+</strong></p>
+
+<div class="am-container">
+    I'm in the .am-container.
+</div>
+
+<!--网格行限制宽度-->
+<div class="am-g am-g-fixed">
+    <div class="am-u-sm-6">6</div>
+    <div class="am-u-sm-6">6</div>
+</div>
+
+<!--当然，如果你觉得嵌套一层也无所谓的话，这样用也可以-->
+<div class="am-container">
+    <div class="am-g am-g-fixed">
+        <div class="am-u-sm-6">6</div>
+        <div class="am-u-sm-6">6</div>
+    </div>
+</div>
+
+<p><strong>
+    示例 5：不足 12 份的网格
+</strong></p>
+<!-- 未添加 .am-u-end 的情形 -->
+<div class="am-g am-g-fixed">
+    <div class="am-u-sm-3">3</div>
+    <div class="am-u-sm-3">3</div>
+    <div class="am-u-sm-3">3</div>
+</div>
+
+<!-- 添加 .am-u-end 后 -->
+<div class="am-g am-g-fixed">
+    <div class="am-u-sm-3">3</div>
+    <div class="am-u-sm-3">3</div>
+    <div class="am-u-sm-3 am-u-end">3</div>
+</div>
+
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>
